@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     CarUsecase carUsecase = CarUsecase(carRepository: carRepository);
     return BlocProvider(
       create: (context) => CarCubit(carUsecase),
-      child: HomePage(),
+      child: const HomePage(),
     );
   }
 }
